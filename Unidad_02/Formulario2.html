@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <h3>Datos adicionales</h3>
+    <form name="formulario" method="GET" action="http://iesbernaldo-lmsgi.000webhostapp.com/formularios.php">
+        <label for="provincia">Provincia:<br></label>
+
+        <select required name="provincia" id="provincia">
+            <option value="">-Selecionar-</option>
+            <option value="AL">Álava/Araba</option>
+            <option value="AB">Albacete</option>
+            <option value="AI">Alicante/Alacant</option>
+            <option value="AM">Almería</option>
+            <option value="AS">Asturias</option>
+            <option value="AV">Avila</option>
+            <option value="BA">Badajoz</option>
+            <option value="BL">Balears (Illes)</option>
+            <option value="BR">Barcelona</option>
+            <option value="CA">Cádiz</option>
+            <option value="CA">Castellón/Castelló</option>
+            <option value="CE">Ceuta"</option>
+            <option value="CR">Ciudad Real</option>
+            <option value="CO">Córdoba</option>
+            <option value="CR">Coruña (A)</option>
+            <option value="CU">Cuenca</option>
+            <option value="GI">Girona</option>
+            <option value="GR">Granada</option>
+            <option value="GU">Guadalajara</option>
+            <option value="GP">Guipúzcoa/Gipuzkoa">
+            <option value="HU">Huelva</option>
+            <option value="HE">Huesca</option>
+            <option value="JA">Jaén</option>
+            <option value="LE">León</option>
+            <option value="LU">Lugo</option>
+            <option value="LL">Lleida</option>
+            <option value="MA">Madrid</option>
+            <option value="ML">Málaga</option>
+            <option value="ME">Melilla</option>
+            <option value="MU">Murcia</option>
+            <option value="NA">Navarra</option>
+            <option value="OU">Ourense</option>
+            <option value="PA">Palencia</option>
+            <option value="PL">Palmas (Las)</option>
+            <option value="PO">Pontevedra</option>
+            <option value="RI">Rioja (La)</option>
+            <option value="SL">Salamanca</option>
+            <option value="ST">Santa Cruz de Tenerife</option>
+            <option value="SE">Segovia</option>
+            <option value="SO">Soria</option>
+            <option value="TA">Tarragona</option>
+            <option value="TE">Teruel</option>
+            <option value="TO">Toledo</option>
+            <option value="VA">Valencia/València</option>
+            <option value="VL">Valladolid</option>
+            <option value="VI">Vizcaya/Bizkaia</option>
+            <option value="ZA">Zamora</option>
+            <option value="ZR">Zaragoza</option>
+        </select>
+
+
+        <p>
+            <label  >Fecha de nacimiento:<br>
+                <input required style="width: 40px" type="text" maxlength="2" name="fechas" list="fecha">
+            </label>
+            de
+            <label  for="mes">
+                <select required name="mes" id="mes"></label>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+            </select>
+            de
+            <label required>
+                    <input required style="width: 60px" type="text" maxlength="4" name="año" list="año">
+            </label>
+        </p>
+
+
+<p>
+        <label for="intereses">Temas de interés:<br></label>
+
+        <select name="intereses" id="intereses">
+            
+            <option value="AL">Administración de bases de datos</option>
+            <option value="AB">Análisis y programación</option>
+            <option value="AI">Arquitectura</option>
+            <option value="AM">Calidad</option>
+            <option value="AS">ERP, CRM, Business Intelligence</option>
+            <option value="AV">Gestión de proyectos</option>
+            <option value="BA">Hardware, redes y seguridadz</option>
+            <option value="BL">Helpdesk</option>
+            <option value="BR">Sistemas</option>
+            <option value="CA">Telecomunicaciones</option>
+          
+        </select>
+
+
+
+</p>
+
+
+        <input type="submit" value="Enviar datos"><input type="reset" value="Borrar datos introducidos">
+
+    </form>
+</body>
+
+</html>
