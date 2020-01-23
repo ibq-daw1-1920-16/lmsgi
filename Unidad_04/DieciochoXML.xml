@@ -2,12 +2,12 @@
 <!DOCTYPE mensajes [
 <!ELEMENT mensajes (mensaje*)>
 <!ELEMENT mensaje (de*, para*, para*, hora*, texto*)>
-<!ELEMENT texto ( strong? , (#PCDATA)    )>
+<!ELEMENT texto  (#PCDATA) |(#PCDATA s, strong?)> 
+<!ELEMENT strong (#PCDATA)>
 <!ELEMENT de (#PCDATA)>
 <!ELEMENT para (#PCDATA)>
 <!ELEMENT hora (#PCDATA)>
 
-<!ELEMENT strong (#PCDATA)>
 ]>
 
 <mensajes>
