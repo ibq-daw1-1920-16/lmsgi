@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+ 
+<xs:element name="receta">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/>
+      <xs:element name="ingrediente" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="procedimiento" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="tiempo" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+
+
+
+  </xs:complexType>
+    </xs:element> 
+</xs:schema>
