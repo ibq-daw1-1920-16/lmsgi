@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_de_personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="listaPersonas.xsd">
+<persona nacionalidad="español">
+<nombre>José García</nombre>
+
+<fechanacimiento>1984-04-25</fechanacimiento>
+
+<telefono>670201256</telefono>
+<telefono>876567210</telefono>
+
+<sexo>Varón</sexo>
+
+</persona>
+<persona nacionalidad="español">
+
+<nombre>Juan Antonio</nombre>
+
+<fechanacimiento>1984-04-25</fechanacimiento>
+<telefono>670201256</telefono>
+
+<numeroseguridadsocial>2569587412569</numeroseguridadsocial>
+
+</persona>
+
+</lista_de_personas>
