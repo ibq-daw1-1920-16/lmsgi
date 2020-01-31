@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--ELEMENT cv (presentacion, datos_academicos+, experiencia_laboral+, lectura*, deportes*, otros*, referencias*)-->
+
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="cv.xsd">
+
+  <presentacion>Curriculum vitae de Juan Muñiz</presentacion>
+  <datos_academicos>Titulo de bachiller</datos_academicos>
+  <experiencia_laboral>camarero</experiencia_laboral>
+  <experiencia_laboral>comercial</experiencia_laboral>
+  <experiencia_laboral>vigilante de seguridad</experiencia_laboral>
+  <lectura>La biblia</lectura>
+  <referencias> Llagar el Titi</referencias>
+  <referencias> Prosegur</referencias>
+</cv>

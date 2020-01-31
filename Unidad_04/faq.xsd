@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+
+<xs:element name="FAQ">
+    
+    <xs:complexType>
+        
+        <xs:sequence>
+        
+        <xs:element name="INFO"  >
+
+      <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TITULO" type="xs:string"/>
+        <xs:element name="AUTOR" type="xs:string"  />
+        <xs:element name="EMAIL" type="xs:string" />
+        
+        <xs:element name="VERSION" type="xs:string" />
+        <xs:element name="FECHA" type="xs:string" />
+      </xs:sequence>
+      </xs:complexType>
+
+    </xs:element> 
+    
+   
+        
+    <xs:element name="PART"  >
+
+      <xs:complexType>
+      
+        <xs:element name="Q" minOccurs="1" maxOccurs="2"/>
+
+        <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="QTEXT" type="xs:string"/>
+            <xs:element name="A" type="xs:string"/>
+        </xs:sequence>  
+        <xs:attribute name="id" type="xs:string" use="required"/>
+     </xs:complexType>
+    </xs:complexType>
+</xs:element> 
+      
+      </xs:sequence>
+      <xs:attribute name="number" type="xs:string" use="required"/>
+      </xs:complexType>
+    </xs:element>
+    
+    
+    
+    </xs:element> 
+    </xs:schema>
+    
