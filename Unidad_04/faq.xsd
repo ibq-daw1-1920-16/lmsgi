@@ -2,6 +2,18 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 
+<xs:element name="TITULO" type="xs:string"/>
+<xs:element name="AUTOR" type="xs:string"  />
+<xs:element name="EMAIL" type="xs:string" />
+
+<xs:element name="VERSION" type="xs:string" />
+<xs:element name="FECHA" type="xs:string" />
+<xs:element name="PART" type="xs:string" />
+
+<xs:element name="QTEST" type="xs:string" />
+<xs:element name="A" type="xs:string" />
+<xs:attribute name="number" />
+<xs:attribute name="id" />
 
 <xs:element name="FAQ">
     
@@ -13,43 +25,39 @@
 
       <xs:complexType>
       <xs:sequence>
-        <xs:element name="TITULO" type="xs:string"/>
-        <xs:element name="AUTOR" type="xs:string"  />
-        <xs:element name="EMAIL" type="xs:string" />
+        <xs:element ref="TITULO"/>
+        <xs:element ref="AUTOR"  />
+        <xs:element ref="EMAIL" />
         
-        <xs:element name="VERSION" type="xs:string" />
-        <xs:element name="FECHA" type="xs:string" />
+        <xs:element ref="VERSION" />
+        <xs:element ref="FECHA" />
       </xs:sequence>
       </xs:complexType>
 
-    </xs:element> 
-    
-   
-        
-    <xs:element name="PART"  >
+ </xs:element>
 
-      <xs:complexType>
-      
-        <xs:element name="Q" minOccurs="1" maxOccurs="2"/>
-
+      <xs:element name="PART"  >
         <xs:complexType>
-        <xs:sequence>
+          <xs:sequence>
+            <xs:element name="Q" minOccurs="1" maxOccurs="2">
 
-            <xs:element name="QTEXT" type="xs:string"/>
-            <xs:element name="A" type="xs:string"/>
-        </xs:sequence>  
-        <xs:attribute name="id" type="xs:string" use="required"/>
-     </xs:complexType>
-    </xs:complexType>
-</xs:element> 
-      
-      </xs:sequence>
-      <xs:attribute name="number" type="xs:string" use="required"/>
-      </xs:complexType>
-    </xs:element>
-    
-    
-    
-    </xs:element> 
-    </xs:schema>
-    
+            <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="QTEST"  />
+            <xs:element ref="A" />
+           
+          </xs:sequence>
+          <xs:attribute ref="id"/>
+        </xs:complexType>
+        </xs:element>
+          </xs:sequence>
+          <xs:attribute ref="number"/>
+        </xs:complexType>
+
+
+      </xs:element>
+
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ </xs:schema>
