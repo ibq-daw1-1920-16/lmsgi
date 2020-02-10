@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Figuras  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="figuras.xsd">
+
+<figura color="FFAA9B" >
+
+    <nombre>cuadrado</nombre>
+    <lado>5</lado>
+    <base>6</base>
+    <altura>6</altura>
+
+
+</figura>
+</Figuras>
