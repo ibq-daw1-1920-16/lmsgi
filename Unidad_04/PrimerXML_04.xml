@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<informaAlumno  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="informaAlumno.xsd">
+
+    <alumno dni="99887766X" >
+        <nombre>Dario</nombre>
+        <apellidos>Fernández Álvarez</apellidos>
+        <nota>3.50</nota>
+        <edad>45</edad>
+        <comentario>Necesita mejorar</comentario>
+    </alumno>
+
+    <alumno dni="11223344A" >
+        <nombre>Luis</nombre>
+        <apellidos>Álvarez García</apellidos>
+        <nota>6.75</nota>
+        <edad>80</edad>
+        <comentario>Copio de Dario, Alfredo y Pilar</comentario>
+    </alumno>
+
+ 
+    <alumno dni="556677Z" >
+        <nombre>Pilar</nombre>
+        <apellidos>Rodríguez Menéndez</apellidos>
+        <nota>8.25</nota>
+        <edad></edad>
+        <comentario>Copio de todos</comentario>
+    </alumno>
+
+    
+    <alumno dni="66554433T" >
+        <nombre>Alfredo</nombre>
+        <apellidos>Martínez González</apellidos>
+        <nota>No presentado</nota>
+        <edad>42</edad>
+        <comentario>Copio de todos</comentario>
+    </alumno>
+
+</informaAlumno>
