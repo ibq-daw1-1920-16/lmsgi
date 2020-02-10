@@ -3,27 +3,59 @@
 
 <xs:simpleType name="Decimal10-2">
     <xs:restriction base="xs:decimal">
-        <xs:maxInclusive value="9999999999" />
+        <xs:minExclusive value="0" />
+        <xs:maxInclusive value="10" />
         <xs:fractionDigits value="2"/>
     </xs:restriction>
 </xs:simpleType>
 
 <xs:simpleType name="No-presentado">
-    <xs:restriction base="xs:string">
+    <xs:restriction base="xs:string" />
+</xs:simpleType>
+
+
+<xs:simpleType name="limiteEdad">
+    <xs:restriction base="xs:integer" >
+        <xs:minExclusive value="15" />
+        <xs:maxInclusive value="75" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="no-edad">
+    <xs:restriction base="xs:string" >
+        <xs:maxLength value="1"></xs:maxLength>
     </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="edadL">
+    <xs:union  memberTypes="no-edad limiteEdad"></xs:union>
 </xs:simpleType>
 
 <xs:simpleType name="OptionalDecimal10-2">
     <xs:union memberTypes="Decimal10-2 No-presentado" />
   </xs:simpleType>
 
+<xs:simpleType name="codigoPostal">
+    <xs:restriction base="xs:integer">
+        <xs:maxExclusive value="99999"/>
+        <xs:minInclusive value="10000"/>
+    </xs:restriction>
+</xs:simpleType>
+ <xs:simpleType name="calle">
+    <xs:restriction base="xs:string" >
+        <xs:maxLength value="18"></xs:maxLength>
+    </xs:restriction>
+</xs:simpleType>
+
 <xs:attributeGroup name="Datos">
     <xs:attribute name="dni" type="xs:string"/>
-    <xs:attribute name="calle" type="xs:string"/>
-    <xs:attribute name="numero" type="xs:string"/>
+    <xs:attribute name="calle" type="calle"/>
+    <xs:attribute name="numero" type="xs:int"/>
     <xs:attribute name="piso" type="xs:string"/>
     <xs:attribute name="poblacion" type="xs:string"/>
-    <xs:attribute name="Codigo-postal" type="xs:string"/>
+    <xs:attribute name="Codigo-postal" type="codigoPostal"/>
+    <xs:attribute name="ciudad" type="xs:string"/>
+    
 </xs:attributeGroup>
 
 
@@ -40,7 +72,7 @@
         <xs:element name="nombre"/>
         <xs:element name="apellidos"/>
         <xs:element name="nota" type="OptionalDecimal10-2"/>
-        <xs:element name="edad"/>
+        <xs:element name="edad" type="edadL"/>
         
         <xs:element name="comentario" type="xs:string"/>
         </xs:sequence>

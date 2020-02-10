@@ -2,7 +2,7 @@
 
 <informaAlumno  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="informaAlumno.xsd">
 
-    <alumno dni="99887766X" >
+    <alumno dni="99887766X" calle="vallespin" numero="5" ciudad="oviedo" Codigo-postal="33021" >
         <nombre>Dario</nombre>
         <apellidos>Fernández Álvarez</apellidos>
         <nota>3.50</nota>
@@ -14,7 +14,7 @@
         <nombre>Luis</nombre>
         <apellidos>Álvarez García</apellidos>
         <nota>6.75</nota>
-        <edad>80</edad>
+        <edad>75</edad>
         <comentario>Copio de Dario, Alfredo y Pilar</comentario>
     </alumno>
 
@@ -28,7 +28,7 @@
     </alumno>
 
     
-    <alumno dni="66554433T" >
+    <alumno dni="66554433T" calle="galiana" numero="23" ciudad="aviles" Codigo-postal="33400" >
         <nombre>Alfredo</nombre>
         <apellidos>Martínez González</apellidos>
         <nota>No presentado</nota>
