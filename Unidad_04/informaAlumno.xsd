@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:simpleType name="nota2">
+<xs:simpleType name="Decimal10-2">
     <xs:restriction base="xs:decimal">
         <xs:maxInclusive value="9999999999" />
         <xs:fractionDigits value="2"/>
     </xs:restriction>
 </xs:simpleType>
+
+<xs:simpleType name="No-presentado">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="OptionalDecimal10-2">
+    <xs:union memberTypes="Decimal10-2 No-presentado" />
+  </xs:simpleType>
+
+<xs:attributeGroup name="Datos">
+    <xs:attribute name="dni" type="xs:string"/>
+    <xs:attribute name="calle" type="xs:string"/>
+    <xs:attribute name="numero" type="xs:string"/>
+    <xs:attribute name="piso" type="xs:string"/>
+    <xs:attribute name="poblacion" type="xs:string"/>
+    <xs:attribute name="Codigo-postal" type="xs:string"/>
+</xs:attributeGroup>
 
 
 
@@ -14,25 +32,26 @@
 <xs:element name="informaAlumno" >
 
 <xs:complexType>
-<xs:sequence>
+    <xs:sequence>
 <xs:element name="alumno" minOccurs="1" maxOccurs="unbounded">
 
     <xs:complexType>
         <xs:sequence>
         <xs:element name="nombre"/>
         <xs:element name="apellidos"/>
-        <xs:element name="nota" type="nota2"/>
+        <xs:element name="nota" type="OptionalDecimal10-2"/>
         <xs:element name="edad"/>
+        
         <xs:element name="comentario" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute name="dni"/>
+        <xs:attributeGroup ref="Datos" />
+
+        
     </xs:complexType>
 
 </xs:element>
 </xs:sequence>
-
 </xs:complexType>
-
 
 </xs:element>
 </xs:schema>
