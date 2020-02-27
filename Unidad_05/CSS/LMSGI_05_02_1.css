@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(189, 189, 189);
+    
+  }
+
+  ul{
+
+    background-color:darkmagenta;
+    width: 220px;
+  }
+
+
+  h1{
+      color: white;
+      word-spacing: 50px;
+      font-family: "Comic Sans MS", "Comic Sans";
+  }
+  h3{
+
+    color: red;
+    font-style: italic;
+
+  }
+  p{
+      text-align: center;
+      width: 220px;
+      background-color: rgb(108, 119, 11);
+      color: red;
+  }
