@@ -1,0 +1,48 @@
+body {
+    margin-left: 150px;
+    background-color: rgb(189, 189, 189);
+    margin-right: 25%;
+    
+  }
+
+  ul{
+    color: red;
+    background-color:darkmagenta;
+    width: 220px;
+   
+  }
+li{
+    border-style:solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 3px;
+}
+
+  h1{
+      color: white;
+      word-spacing: 50px;
+      font-family: "Comic Sans MS", "Comic Sans";
+      border-style: solid;
+      border-color: red;
+    
+  }
+  h3{
+
+    color: red;
+    font-style: italic;
+    
+    text-align: right;
+
+  }
+  p{
+      text-align: center;
+      width: 220px;
+      background-color: rgb(108, 119, 11);
+      color: red;
+      border-style: solid;
+      border-width: 10px;
+      border-color: blue;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+  }
