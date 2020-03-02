@@ -1,0 +1,29 @@
+div {
+    list-style-type: none;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+    width: 400px;
+  }
+  
+ 
+   a {
+    display: block;
+   padding-left: 25px;
+   padding-right: 25px;
+    text-align: center;
+    
+    text-decoration: none;
+    float: left;
+   
+  }
+  a:hover {
+    background-color:green;
+  }
+  a:visited {
+   color: white;
+   
+  }
+ a:active{
+     background-color: green;
+ }
